@@ -21,10 +21,6 @@ module.exports = {
     path: path.resolve(__dirname, "../dist"),
     filename: "bundle.[hash].js",
   },
-  externals: {
-    'react': 'CORE.React',
-    'react-dom': 'CORE.ReactDOM',
-  },
   devServer: {
     // historyApiFallback: true,
     // contentBase: path.join(__dirname, "./dist"),
