@@ -6,33 +6,18 @@ import '@/global';
 
 window.React = React
 import { Button, message, Modal } from 'antd';
+import { Card } from './components/Card';
 class App extends React.Component<any, { isModalOpen: boolean }> {
-  constructor(props) {
+  constructor(props: any) {
     super(props)
-    this.state = { isModalOpen : false }
+    this.state = { isModalOpen: false }
   }
-  componentDidCatch(error, info) {
-    console.error(Date.now(), error, info)
-  }
-
-  changeModal = (isModalOpen) => {
-    this.setState({ isModalOpen });
-  };
 
 
   render() {
-    const { isModalOpen  } = this.state || {};
-    return <div onClick={() => {
-
-    }}>
-      <Button type="primary" onClick={() => this.changeModal(true)}>
-        Open Modal
-      </Button>
-     <Modal title="Basic Modal" visible={isModalOpen} onOk={() => this.changeModal(false)} onCancel={() => this.changeModal(false)}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-      </Modal>2222
+    const { isModalOpen } = this.state || {};
+    return <div>
+     
     </div>;
   }
 };
