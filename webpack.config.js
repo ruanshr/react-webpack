@@ -13,7 +13,7 @@ module.exports = {
   mode: "development",
   entry: {
     //入口文件
-    app: "/src/index.tsx",
+    app: "/src/main.tsx",
   },
   output: {
     //出口文件
